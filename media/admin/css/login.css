@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+@import '../../css/reset.css';
+
+body 				{background-image:url(../img/login/bg.jpg); background-position:left bottom;}
+html 				{font-size:12px; color:#8d8d8d; font-family:Arial, Helvetica, sans-serif;}
+a 					{text-decoration: none; color:#8d8d8d;}
+a:hover 			{text-decoration:underline;}
+
+div.content 		{position:absolute; margin:0px 0px 200px 189px; bottom:0px; width:700px; height:150px;} 
+div.logo 			{background-image:url(../img/login/logo.png); width:172px; height:66px; margin:0px 0px 0px 0px; position:absolute; float:left;}
+div.giris 			{background-image:url(../img/login/giris_bg.png); width:499px; height:58px; margin:10px 0px 0px 0px; position:absolute; float:right; right:0px;}
+div.sorgula 		{width:499px; height:39px; margin:80px 0px 0px 0px; position:absolute; float:right; right:0px;}
+
+div.message 		{background-image:url(../img/login/balon.png); width:454px; height:59px; margin:-50px -4px 0px 0px; position:absolute; float:right; right:0px; text-align:right;}
+div.message .close	{background-image:url(../img/login/alert.png); width:21px; height:21px; text-indent: -9999px; margin:10px 0px 0px 15px;}
+div.message p		{ float:right; text-align:right; padding:12px 16px 0px 0px; color:#333; text-shadow:1px 1px #dfe8ee; font-weight:bold;}
+
+
+
+#loginForm p, #loginForm label { display:none;}
+#loginForm input[type=text],#loginForm input[type=password] {float:left; border:0px; padding:5px; color:333;}
+#loginForm input[type=submit]{float:left; border:0px; background-image:url(../img/login/btn.png); width:93px; height:34px; margin:10px 0px 0px 10px; color:#FFFFFF; font-weight:bold; font-size:12px; text-shadow:1px 1px #6a0000; cursor:pointer;}
+#id_username {margin:14px 0px 0px 18px; width:152px;}
+#id_password {margin:14px 0px 0px 17px; width:175px;}
+
+.foother {position:absolute; bottom:0px; right:0px; width:400px; height:60px; text-align:right; margin-right:10px;}
+.foother  img { margin-bottom:10px;}
+

@@ -1,0 +1,40 @@
+{% load 'i18n' %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>4NET {P}jango Web Framework</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noindex, nofollow">
+
+<link href="{{ ADMIN_MEDIA_URL }}/css/login.css" rel="stylesheet" type="text/css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('.message').click(function(){
+			$(this).hide('fade');
+		});			
+	});
+</script>
+
+</head><body>
+<div class="content">
+	{% get_messages %}
+    <div class="logo">&nbsp;</div>
+    <form id="loginForm" name="loginForm" action="" method="POST">
+	<div class="giris">
+    	{{ addchange_form }}
+        <input name="submit" type="submit" class="login_btn" id="submit" value="{% trans "LOGIN" %}" />
+    </div>
+    </form>
+    <div class="sorgula"><a href="">{% trans "I forgot my username and password!" %}</a></div>
+</div>
+<div class="foother">
+	<img src="{{ ADMIN_MEDIA_URL }}/img/login/pjango_logo.png" width="109px" height="24px"><br>
+	Copyright © 2004 - 2012 <a href="http://www.4net.com.tr" target="_blank">4NET</a> <a href="http://www.pjangoproject.com" target="_blank">{P}jango</a> Web Framework
+</div>
+</body>
+</html>
+
+
+

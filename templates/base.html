@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <title>{{ SITE_TITLE }} {% block title %}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="{{ LANGUAGE_CODE }}" />
+    <meta name="title" content="{{ SITE_TITLE }} {% block meta_title %}{% endblock %}" />
+    <meta name="description" content="{{ SITE_DESCRIPTION }}{% block meta_description %}{% endblock %}" />
+    <meta name="keywords" content="{{ SITE_KEYWORDS }}{% block meta_keywords %}{% endblock %}" />
+    <meta name="robots" content="follow,index" />
+    <meta name="identifier-URL" content="{{ SITE_IDENTIFIER_URL }}" />   
+    <meta name="revisit-after" content="{{ SITE_REVISIT_AFTER }}" />   
+    <meta name="generator" content="pjango" />
+    <meta name="copyright" content="Copyright © 2011, 4NET Information Technologies" />
+    {% block head %}{% endblock %}  
+</head>
+{% load i18n %}
+
+<body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
+{% block body %}{% endblock %}
+</body>
+
+</html>

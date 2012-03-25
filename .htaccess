@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /pjango-sandbox/index.php [L]
+
+<Files ~ "\.(inc|sql|log|yml)$">
+  order allow,deny
+  deny from all
+</Files>

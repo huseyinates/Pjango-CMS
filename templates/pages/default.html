@@ -1,0 +1,18 @@
+{% extends 'base_site.html' %}
+{% load 'i18n' %}
+
+{% block title %} {{ page.get_title }} {% endblock %}
+{% block meta_title %} {{ page.get_title }} {% endblock %}
+{% block meta_description %} {{ page.get_meta_description }} {% endblock %}
+{% block meta_keywords %} {{ page.get_meta_keywords }} {% endblock %}
+
+{% block extrahead %}{% endblock %}
+
+{% block content %}
+    {{ page.get_title }}<br />
+    {{ page.get_slug }}<br />
+    {{ page.get_excerpt }}<br />
+    {{ page.get_content }}<br />
+    {{ page.get_image_url }}<br />
+{% endblock %}
+
