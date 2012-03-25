@@ -13,10 +13,10 @@ $SETTINGS['LANGUAGE_CODE'] = 'tr';
 $SETTINGS['SECRET_KEY'] = '@qvho08lmb(nnxi(-_$hrx8bnrtvp^@laupg)e%rq6i7nf0p1i';
  
 $SETTINGS['DATABASES'] = array(
-	'DEV'  => 'mysql://root:@localhost/pjango-sandbox',
+	'DEV'  => 'mysql://root:@localhost/pjango-cms',
 );
 $SETTINGS['SITE_URL_PREFIX'] = '';
-$SETTINGS['SITE_URL'] = '/pjango-sandbox';
+$SETTINGS['SITE_URL'] = '/pjango-cms';
 $SETTINGS['ADMIN_SITE_URL'] = $SETTINGS['SITE_URL'].'/admin';
 $SETTINGS['MEDIA_URL'] = $SETTINGS['SITE_URL'].'/media';
 $SETTINGS['ADMIN_MEDIA_URL'] = $SETTINGS['MEDIA_URL'].'/admin';
