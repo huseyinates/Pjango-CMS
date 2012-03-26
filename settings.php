@@ -16,7 +16,7 @@ $SETTINGS['DATABASES'] = array(
 	'DEV'  => 'mysql://root:@localhost/pjango-cms',
 );
 $SETTINGS['SITE_URL_PREFIX'] = '';
-$SETTINGS['SITE_URL'] = '/pjango-cms';
+$SETTINGS['SITE_URL'] = '/Pjango-CMS';
 $SETTINGS['ADMIN_SITE_URL'] = $SETTINGS['SITE_URL'].'/admin';
 $SETTINGS['MEDIA_URL'] = $SETTINGS['SITE_URL'].'/media';
 $SETTINGS['ADMIN_MEDIA_URL'] = $SETTINGS['MEDIA_URL'].'/admin';
